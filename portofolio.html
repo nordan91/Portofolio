@@ -3,131 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <title>Profil Biodata</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav {
-      background-color: #333;
-      padding: 15px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-right: 20px;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 40px;
-    }
-
-    .intro {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .intro img {
-      width: 600px;
-      height: 400px;
-      object-fit: cover;
-    }
-
-    .biodata {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
-    }
-
-    .biodata-box {
-      width: 30%;
-      border: 2px solid #ccc;
-      padding: 15px;
-      border-radius: 10px;
-      background-color: #f9f9f9;
-    }
-
-    .portfolio table {
-      width: 100%;
-      border-spacing: 20px;
-    }
-
-    .portfolio img {
-      width: 350px;
-      height: 200px;
-      object-fit: cover;
-      border: 1px solid #ccc;
-    }
-
-    h2 {
-      margin-top: 0;
-    }
-  </style>
 </head>
 <body>
 
-  <!-- Section 1: Navigasi -->
-  <nav>
-    <a href="#">Beranda</a>
-    <a href="#">Tentang</a>
-    <a href="#">Biodata</a>
-    <a href="#">Portofolio</a>
-  </nav>
-
-  <!-- Section 2: Judul dan Gambar -->
-  <section class="intro">
-    <div>
-      <h2>Halo, saya Nama Anda</h2>
-      <p>Selamat datang di halaman profil saya!</p>
-    </div>
-    <img src="https://via.placeholder.com/600x400" alt="Foto Profil">
-  </section>
-
-  <!-- Section 3: Biodata (6 box About Me) -->
-  <section class="biodata">
-    <div class="biodata-box">
-      <h3>Nama</h3>
-      <p>Rahmad Wicaksono Adi Prastowo</p>
-    </div>
-    <div class="biodata-box">
-      <h3>Tempat, Tanggal Lahir</h3>
-      <p>Jakarta, 1 Maret 2004</p>
-    </div>
-    <div class="biodata-box">
-      <h3>Pendidikan</h3>
-      <p>Universitas Gunadarma, Informatika</p>
-    </div>
-    <div class="biodata-box">
-      <h3>Hobi</h3>
-      <p>Menonton movie, Coding, Games</p>
-    </div>
-    <div class="biodata-box">
-      <h3>Email</h3>
-      <p>arahmadwicaksono@email.com</p>
-    </div>
-    <div class="biodata-box">
-      <h3>Telepon</h3>
-      <p>+62 813-1777-8920</p>
-    </div>
-  </section>
-
-  <!-- Section 4: Portofolio dengan HTML Table -->
-  <section class="portfolio">
-    <h2>Portofolio Proyek</h2>
-    <table>
+  <!-- Section 1: Judul dan Navigasi -->
+  <section>
+    <table width="100%">
       <tr>
-        <td><img src="https://via.placeholder.com/350x200" alt="Project 1"></td>
-        <td><img src="https://via.placeholder.com/350x200" alt="Project 2"></td>
-        <td><img src="https://via.placeholder.com/350x200" alt="Project 3"></td>
+        <td align="left">
+          <h1>Profil Saya</h1>
+        </td>
+        <td align="right">
+          <nav>
+            <a href="#">Beranda</a> |
+            <a href="#">Tentang</a> |
+            <a href="#">Biodata</a> |
+            <a href="#">Portofolio</a>
+          </nav>
+        </td>
       </tr>
     </table>
   </section>
+
+  <hr style="border: 3px solid black;">
+
+  <!-- Section 2: Judul dan Gambar -->
+  <section>
+    <table border="0" cellspacing="20" width="100%">
+      <tr>
+        <td width="50%" valign="top">
+          <h2>Halo, saya Nama Anda</h2>
+          <p>Selamat datang di halaman profil saya!</p>
+        </td>
+        <td width="50%" align="right">
+          <img src="data:image/jpeg;base64,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" alt="Foto Profil" width="600" height="400">
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <hr style="border: 3px solid black;">
+
+  <!-- Section 3: Biodata -->
+  <section>
+    <center><h2>Biodata</h2></center>
+    <table border="3" cellpadding="10" cellspacing="10" width="100%">
+      <tr>
+        <td>
+          <h3>Nama</h3>
+          <p>Rahmad Wicaksono Adi Prastowo</p>
+        </td>
+        <td>
+          <h3>Tempat, Tanggal Lahir</h3>
+          <p>Jakarta, 1 Maret 2004</p>
+        </td>
+        <td>
+          <h3>Pendidikan</h3>
+          <p>Universitas Gunadarma, Informatika</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>Hobi</h3>
+          <p>Menonton movie, Coding, Games</p>
+        </td>
+        <td>
+          <h3>Email</h3>
+          <p>arahmadwicaksono@email.com</p>
+        </td>
+        <td>
+          <h3>Telepon</h3>
+          <p>+62 813-1777-8920</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <hr style="border: 3px solid black;">
+
+  <!-- Section 4: Portofolio -->
+  <section>
+    <center><h2>Portofolio Proyek</h2></center>
+    <table border="0" cellspacing="20" align="center">
+      <tr>
+        <td>
+          <img src="https://cdn.pixabay.com/photo/2017/03/01/08/55/app-2105993_960_720.png" alt="Project 1" width="350" height="200">
+        </td>
+        <td>
+          <img src="https://cdn.pixabay.com/photo/2017/08/10/03/29/ux-2616512_960_720.jpg" alt="Project 2" width="350" height="200">
+        </td>
+        <td>
+          <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" alt="Project 3" width="350" height="200">
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <hr style="border: 3px solid black;">
 
 </body>
 </html>
