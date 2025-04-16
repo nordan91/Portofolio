@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil Biodata</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    .intro {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .intro img {
+      width: 600px;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .biodata {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .biodata-box {
+      width: 30%;
+      border: 2px solid #ccc;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .portfolio table {
+      width: 100%;
+      border-spacing: 20px;
+    }
+
+    .portfolio img {
+      width: 350px;
+      height: 200px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section 1: Navigasi -->
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Tentang</a>
+    <a href="#">Biodata</a>
+    <a href="#">Portofolio</a>
+  </nav>
+
+  <!-- Section 2: Judul dan Gambar -->
+  <section class="intro">
+    <div>
+      <h2>Halo, saya Nama Anda</h2>
+      <p>Selamat datang di halaman profil saya!</p>
+    </div>
+    <img src="https://via.placeholder.com/600x400" alt="Foto Profil">
+  </section>
+
+  <!-- Section 3: Biodata (6 box About Me) -->
+  <section class="biodata">
+    <div class="biodata-box">
+      <h3>Nama</h3>
+      <p>Rahmad Wicaksono Adi Prastowo</p>
+    </div>
+    <div class="biodata-box">
+      <h3>Tempat, Tanggal Lahir</h3>
+      <p>Jakarta, 1 Maret 2004</p>
+    </div>
+    <div class="biodata-box">
+      <h3>Pendidikan</h3>
+      <p>Universitas Gunadarma, Informatika</p>
+    </div>
+    <div class="biodata-box">
+      <h3>Hobi</h3>
+      <p>Menonton movie, Coding, Games</p>
+    </div>
+    <div class="biodata-box">
+      <h3>Email</h3>
+      <p>arahmadwicaksono@email.com</p>
+    </div>
+    <div class="biodata-box">
+      <h3>Telepon</h3>
+      <p>+62 813-1777-8920</p>
+    </div>
+  </section>
+
+  <!-- Section 4: Portofolio dengan HTML Table -->
+  <section class="portfolio">
+    <h2>Portofolio Proyek</h2>
+    <table>
+      <tr>
+        <td><img src="https://via.placeholder.com/350x200" alt="Project 1"></td>
+        <td><img src="https://via.placeholder.com/350x200" alt="Project 2"></td>
+        <td><img src="https://via.placeholder.com/350x200" alt="Project 3"></td>
+      </tr>
+    </table>
+  </section>
+
+</body>
+</html>
